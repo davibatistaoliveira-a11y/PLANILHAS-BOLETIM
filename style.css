@@ -1,0 +1,71 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+}
+
+h1 {
+    color: #222;
+}
+
+.explicacao {
+    margin-bottom: 25px;
+    color: #555;
+}
+
+table {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+td:first-child {
+    text-align: left;
+    font-weight: bold;
+}
+
+input {
+    width: 70px;
+    padding: 7px;
+    text-align: center;
+}
+
+button {
+    margin-top: 25px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.total {
+    font-weight: bold;
+}
+
+.situacao {
+    font-weight: bold;
+}
+

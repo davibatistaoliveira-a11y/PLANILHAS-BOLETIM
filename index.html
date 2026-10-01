@@ -1,0 +1,165 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Boletim</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Meu Boletim Escolar</h1>
+
+    <p class="explicacao">
+        Digite suas notas dos três trimestres e veja sua situação.
+        Para ser aprovado, é necessário alcançar 180 pontos.
+    </p>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Matéria</th>
+                <th>1º Trimestre</th>
+                <th>2º Trimestre</th>
+                <th>3º Trimestre</th>
+                <th>Total</th>
+                <th>Situação</th>
+            </tr>
+        </thead>
+
+        <tbody id="boletim">
+
+            <tr>
+                <td>História do Paraná</td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td class="total">-</td>
+                <td class="situacao">-</td>
+            </tr>
+
+            <tr>
+                <td>Geografia do Paraná</td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td class="total">-</td>
+                <td class="situacao">-</td>
+            </tr>
+
+            <tr>
+                <td>Geografia</td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td class="total">-</td>
+                <td class="situacao">-</td>
+            </tr>
+
+            <tr>
+                <td>Português</td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td class="total">-</td>
+                <td class="situacao">-</td>
+            </tr>
+
+            <tr>
+                <td>Inglês</td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td class="total">-</td>
+                <td class="situacao">-</td>
+            </tr>
+
+            <tr>
+                <td>Educação Digital</td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td class="total">-</td>
+                <td class="situacao">-</td>
+            </tr>
+
+            <tr>
+                <td>Matemática</td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td class="total">-</td>
+                <td class="situacao">-</td>
+            </tr>
+
+            <tr>
+                <td>Química</td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td class="total">-</td>
+                <td class="situacao">-</td>
+            </tr>
+
+            <tr>
+                <td>Biologia</td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td class="total">-</td>
+                <td class="situacao">-</td>
+            </tr>
+
+            <tr>
+                <td>Educação Física</td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td class="total">-</td>
+                <td class="situacao">-</td>
+            </tr>
+
+            <tr>
+                <td>Artes</td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td class="total">-</td>
+                <td class="situacao">-</td>
+            </tr>
+
+            <tr>
+                <td>Artes Paranaense</td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td class="total">-</td>
+                <td class="situacao">-</td>
+            </tr>
+
+            <tr>
+                <td>Educação Financeira</td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td><input type="number" class="nota" min="0" max="100"></td>
+                <td class="total">-</td>
+                <td class="situacao">-</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <button onclick="calcularNotas()">Calcular notas</button>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```
