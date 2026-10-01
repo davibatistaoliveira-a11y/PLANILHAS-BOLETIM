@@ -1,4 +1,4 @@
 function calcularNotas() {
-alert("O JavaScript está funcionando!");
+alert("O botao está funcionando!");
 }
 
