@@ -1,4 +1,4 @@
-```javascript
+javascript
 function calcularNotas() {
 
     let materias = document.querySelectorAll("#boletim tr");
@@ -43,4 +43,4 @@ function calcularNotas() {
         }
     });
 }
-```
+
